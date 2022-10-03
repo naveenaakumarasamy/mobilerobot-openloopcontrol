@@ -9,77 +9,65 @@ To develop a python control code to move the mobilerobot along the predefined pa
 
 ## Procedure
 
-Step1:
-
-<br/>
-
-Step2:
-
-<br/>
-
-Step3:
-
-<br/>
-
-Step4:
-
-<br/>
-
-Step5:
-
-<br/>
-
+Step1:Import the required packages
+Step2:Assign the value for X axis and Y axis 
+Step3:write the program to move the Robot
+Step4:Write the program to record video
+Step5:Run the program to move the robot
 ## Program
 ```python
+
 from robomaster import robot
 import time
+from robomaster import camera
 
-if __name__ == '__main__':
+
+if _name_ == '_main_':
     ep_robot = robot.Robot()
     ep_robot.initialize(conn_type="ap")
 
-    ep_chassis = ep_robot.chassis
+    ep_led = ep_robot.led
 
-    ## Write your code here
+for i in range(10):
+    ep_led.set_led(comp="all",r=255,g=0,b=0,effect="on")   
+    time.sleep(2)
 
+    ep_led.set_led(comp="all",r=0,g=255,b=100,effect="on")   
+    time.sleep(2)
+
+    ep_led.set_led(comp="all",r=0,g=0,b=255,effect="on")   
+    time.sleep(2)
+
+    ep_chassis = ep_robot.chassis 
+
+    ep_camera = ep_robot.camera
+
+     
+ 
+    ep_chassis.move(x=3.9, y=0, z=0, xy_speed=0.75).wait_for_completed()
+
+    ep_chassis.drive_speed(x=0.2,y=0,z=20)
+    time.sleep(7)
+
+    ep_chassis.move(x=2.5, y=0, z=0, xy_speed=0.75).wait_for_completed()
+
+    ep_chassis.move(x=0, y=0.1, z=0, xy_speed=0.75).wait_for_completed()
+
+    ep_chassis.drive_speed(x=1,y=0,z=40)
+    time.sleep(7)
+
+    ep_chassis.move(x=0, y=0.1, z=0, xy_speed=0.75).wait_for_completed()
+
+
+
+    ep_robot.close()
+    ```
+    ##Output:
+    Here is the video link:
+
+https://user-images.githubusercontent.com/113497406/193526046-881d0737-b291-4685-8568-2e78887d379a.mp4
 
 
     
-    ep_robot.close()
-```
-
-## MobileRobot Movement Image:
-
-![robo](./img/robomaster.png)
-
-Insert image here
-
-
-<br/>
-<br/>
-<br/>
-<br/>
-
-## MobileRobot Movement Video:
-
-Upload your video in Youtube and paste your video-id here
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
-
-<br/>
-<br/>
-<br/>
-<br/>
-
 ## Result:
 Thus the python program code is developed to move the mobilerobot in the predefined path.
-
-
-<br/>
-<br/>
-
-```
-Mobile Robotics Laboratory
-Department of Artificial Intelligence and Data Science/ Machine Learning
-Saveetha Engineering College
-```
