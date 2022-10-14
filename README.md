@@ -20,7 +20,6 @@ Write the program to record video
 ### Step5:
 Run the program to move the robot
 
-
 ## Program:
 ```python
 #Developed by: Naveenaa A.K
