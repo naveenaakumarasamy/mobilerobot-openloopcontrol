@@ -9,15 +9,22 @@ To develop a python control code to move the mobilerobot along the predefined pa
 
 ## Procedure
 
-### Step1:Import the required packages
-### Step2:Assign the value for X axis and Y axis 
-### Step3:write the program to move the Robot
-### Step4:Write the program to record video
-### Step5:Run the program to move the robot
+### Step1:
+Import the required packages
+### Step2:
+Assign the value for X axis and Y axis 
+### Step3:
+write the program to move the Robot
+### Step4:
+Write the program to record video
+### Step5:
+Run the program to move the robot
 
 
-## Program
+## Program:
 ```python
+#Developed by: Naveenaa A.K
+#Register number: 22003091
 
 from robomaster import robot
 import time
@@ -63,13 +70,13 @@ for i in range(10):
 
 
     ep_robot.close()
-    ```
-    ##Output:
+```
+## Output:
     Here is the video link:
 
 https://user-images.githubusercontent.com/113497406/193526046-881d0737-b291-4685-8568-2e78887d379a.mp4
 
 
     
-## Result:
+### Result:
 Thus the python program code is developed to move the mobilerobot in the predefined path.
