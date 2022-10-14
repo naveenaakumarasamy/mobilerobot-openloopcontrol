@@ -71,9 +71,15 @@ for i in range(10):
 
     ep_robot.close()
 ```
-## Output:
-    Here is the video link:
+## Initial Position:
+![WhatsApp Image 2022-10-14 at 11 19 38 AM](https://user-images.githubusercontent.com/113497406/195772390-0bede9ec-8445-4014-939c-c0efd71de6c0.jpeg)
 
+
+## Final Position:
+![WhatsApp Image 2022-10-14 at 11 19 38 AM (1)](https://user-images.githubusercontent.com/113497406/195772473-879fa271-9d3a-4a8d-be34-4ffe0740ee53.jpeg)
+
+
+## Output:
 https://user-images.githubusercontent.com/113497406/193526046-881d0737-b291-4685-8568-2e78887d379a.mp4
 
 
